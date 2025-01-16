@@ -9,3 +9,8 @@ global.skill_useable = 0;
 global.dash_available = true;      // Flag to indicate if dash is available
 global.dash_timer = 0;
 global.dash_speed = 100
+
+
+
+//blocking 
+global.block_active = false

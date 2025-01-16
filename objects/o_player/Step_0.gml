@@ -46,6 +46,7 @@ if global.dash_available == true{
 
 				// Create the o_dash instance behind the player
 				instance_create_layer(dash_x, dash_y, "Instances", o_dash);
+				
 			x += global.dash_direction[0] * global.dash_speed;  // Horizontal movement (left/right)
 			y += global.dash_direction[1] * global.dash_speed;  // Vertical movement (up/down)
 			global.dash_timer += 150
@@ -58,6 +59,8 @@ if global.dash_available == true{
 if global.dash_timer > 0{
 	global.dash_timer -= 1;
 }
+
+// swinging action
 
  if (global.is_sword_picked_up && mouse_check_button_pressed(mb_left)) {
     // Get the mouse position
@@ -73,4 +76,25 @@ if global.dash_timer > 0{
     
     // Create the slash object in the direction of the mouse
     instance_create_layer(slash_x, slash_y, "Instances", o_slash);
+}
+
+// blocking action
+
+if (global.is_sword_picked_up && mouse_check_button(mb_right)) && !global.block_active {
+	global.block_active = true
+	var point_x = mouse_x;
+    var point_y = mouse_y;
+
+    // Calculate the angle between the player and the mouse
+    var slash_angle = point_direction(x, y, point_x, point_y);
+
+    // Calculate the position in front of the player based on the slash direction
+    var slash_x = x + lengthdir_x(48, slash_angle);  // 48 is the offset distance, adjust as needed
+    var slash_y = y + lengthdir_y(48, slash_angle);  // 48 is the offset distance, adjust as needed
+    
+    // Create the slash object in the direction of the mouse
+    instance_create_layer(slash_x, slash_y, "Instances", o_block);
+}
+if !mouse_check_button(mb_right){
+		global.block_active = false
 }
