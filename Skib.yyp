@@ -46,6 +46,7 @@
     {"id":{"name":"p_slash","path":"particles/p_slash/p_slash.yy",},},
     {"id":{"name":"r_house","path":"rooms/r_house/r_house.yy",},},
     {"id":{"name":"r_outside","path":"rooms/r_outside/r_outside.yy",},},
+    {"id":{"name":"Pee","path":"sprites/Pee/Pee.yy",},},
     {"id":{"name":"s_block","path":"sprites/s_block/s_block.yy",},},
     {"id":{"name":"s_dash","path":"sprites/s_dash/s_dash.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
