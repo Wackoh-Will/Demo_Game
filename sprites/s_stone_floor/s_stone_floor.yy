@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"s_stone_floor",
   "bboxMode":0,
-  "bbox_bottom":63,
+  "bbox_bottom":47,
   "bbox_left":0,
-  "bbox_right":63,
+  "bbox_right":47,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":48,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"8e195f30-00bd-4eef-973e-132616536253","blendMode":0,"displayName":"default","isLocked":false,"name":"8e195f30-00bd-4eef-973e-132616536253","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":48,
 }
