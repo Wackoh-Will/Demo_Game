@@ -34,6 +34,7 @@
   },
   "name":"Skib",
   "resources":[
+    {"id":{"name":"o_dash","path":"objects/o_dash/o_dash.yy",},},
     {"id":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},},
     {"id":{"name":"o_medkit","path":"objects/o_medkit/o_medkit.yy",},},
     {"id":{"name":"o_obolisk_unactive","path":"objects/o_obolisk_unactive/o_obolisk_unactive.yy",},},
@@ -44,7 +45,7 @@
     {"id":{"name":"p_slash","path":"particles/p_slash/p_slash.yy",},},
     {"id":{"name":"r_house","path":"rooms/r_house/r_house.yy",},},
     {"id":{"name":"r_outside","path":"rooms/r_outside/r_outside.yy",},},
-    {"id":{"name":"Dash","path":"sprites/Dash/Dash.yy",},},
+    {"id":{"name":"s_dash","path":"sprites/s_dash/s_dash.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
     {"id":{"name":"s_grass","path":"sprites/s_grass/s_grass.yy",},},
     {"id":{"name":"s_medkit","path":"sprites/s_medkit/s_medkit.yy",},},

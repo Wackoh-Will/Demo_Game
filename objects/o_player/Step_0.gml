@@ -40,9 +40,16 @@ if global.health <= 0 {
 if global.dash_available == true{
 	if global.dash_timer == 0{
 		if keyboard_check_pressed(ord("E")){
+			// Assuming global.dash_direction holds the angle the player is facing or moving
+				var dash_x = x - lengthdir_x(0, x);  // 48 is the offset distance, you can adjust it
+				var dash_y = y - lengthdir_y(0, y);  // 48 is the offset distance, you can adjust it
+
+				// Create the o_dash instance behind the player
+				instance_create_layer(dash_x, dash_y, "Instances", o_dash);
 			x += global.dash_direction[0] * global.dash_speed;  // Horizontal movement (left/right)
 			y += global.dash_direction[1] * global.dash_speed;  // Vertical movement (up/down)
 			global.dash_timer += 150
+			
 			
 		}
 	}
@@ -53,25 +60,17 @@ if global.dash_timer > 0{
 }
 
  if (global.is_sword_picked_up && mouse_check_button_pressed(mb_left)) {
-    // Calculate the position in front of the player based on the player's direction
-    var slash_x = x;
-    var slash_y = y;
+    // Get the mouse position
+    var point_x = mouse_x;
+    var point_y = mouse_y;
 
-    // Check the direction the player is facing and spawn the slash in front of the player
-    if (image_angle == 0) { // Facing right
-        slash_x = x + 48;  // Adjust as needed based on your sprite size
-        slash_y = y;
-    } else if (image_angle == 180) { // Facing left
-        slash_x = x - 32;  // Adjust as needed
-        slash_y = y;
-    } else if (image_angle == 90) { // Facing down
-        slash_x = x;
-        slash_y = y + 32; // Adjust as needed
-    } else if (image_angle == 270) { // Facing up
-        slash_x = x;
-        slash_y = y - 32; // Adjust as needed
-    }
+    // Calculate the angle between the player and the mouse
+    var slash_angle = point_direction(x, y, point_x, point_y);
+
+    // Calculate the position in front of the player based on the slash direction
+    var slash_x = x + lengthdir_x(48, slash_angle);  // 48 is the offset distance, adjust as needed
+    var slash_y = y + lengthdir_y(48, slash_angle);  // 48 is the offset distance, adjust as needed
     
-    // Create the slash object in front of the player
+    // Create the slash object in the direction of the mouse
     instance_create_layer(slash_x, slash_y, "Instances", o_slash);
 }
