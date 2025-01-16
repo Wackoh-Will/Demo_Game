@@ -1,0 +1,1 @@
+global.is_sword_picked_up = false
