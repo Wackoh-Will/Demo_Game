@@ -44,6 +44,7 @@
     {"id":{"name":"p_slash","path":"particles/p_slash/p_slash.yy",},},
     {"id":{"name":"r_house","path":"rooms/r_house/r_house.yy",},},
     {"id":{"name":"r_outside","path":"rooms/r_outside/r_outside.yy",},},
+    {"id":{"name":"Dash","path":"sprites/Dash/Dash.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
     {"id":{"name":"s_grass","path":"sprites/s_grass/s_grass.yy",},},
     {"id":{"name":"s_medkit","path":"sprites/s_medkit/s_medkit.yy",},},
