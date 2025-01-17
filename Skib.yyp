@@ -36,6 +36,7 @@
   "resources":[
     {"id":{"name":"o_block","path":"objects/o_block/o_block.yy",},},
     {"id":{"name":"o_cell_door","path":"objects/o_cell_door/o_cell_door.yy",},},
+    {"id":{"name":"o_companion","path":"objects/o_companion/o_companion.yy",},},
     {"id":{"name":"o_dash","path":"objects/o_dash/o_dash.yy",},},
     {"id":{"name":"o_enemy","path":"objects/o_enemy/o_enemy.yy",},},
     {"id":{"name":"o_medkit","path":"objects/o_medkit/o_medkit.yy",},},
@@ -51,6 +52,7 @@
     {"id":{"name":"r_prison","path":"rooms/r_prison/r_prison.yy",},},
     {"id":{"name":"s_block","path":"sprites/s_block/s_block.yy",},},
     {"id":{"name":"s_cell_door","path":"sprites/s_cell_door/s_cell_door.yy",},},
+    {"id":{"name":"s_companion","path":"sprites/s_companion/s_companion.yy",},},
     {"id":{"name":"s_dash","path":"sprites/s_dash/s_dash.yy",},},
     {"id":{"name":"s_enemy","path":"sprites/s_enemy/s_enemy.yy",},},
     {"id":{"name":"s_grass","path":"sprites/s_grass/s_grass.yy",},},

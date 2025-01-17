@@ -9,6 +9,7 @@ if (keyboard_check(vk_shift)) {
 
 // Handle input for movement
 // Handle input for movement
+// Handle input for movement
 if (keyboard_check(ord("W"))) {
     y_speed = -global.player_move_speed;  // Move up
     global.dash_direction = [0, -1];
@@ -30,13 +31,13 @@ if (keyboard_check(ord("A"))) {
 }
 
 // Horizontal movement (left-right)
-if (!place_meeting(x + x_speed, y, o_prison_wall)) {
-    x += x_speed;  // Move horizontally if no collision
+if (!place_meeting(x + x_speed, y, solid)) {
+    x += x_speed;  // Move horizontally if no collision with any solid object
 }
 
 // Vertical movement (up-down)
-if (!place_meeting(x, y + y_speed, o_prison_wall)) {
-    y += y_speed;  // Move vertically if no collision
+if (!place_meeting(x, y + y_speed, solid)) {
+    y += y_speed;  // Move vertically if no collision with any solid object
 }
 
 if global.medkit = true{

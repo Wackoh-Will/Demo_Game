@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_cell_door",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"o_player","path":"objects/o_player/o_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_companion",
+  "eventList":[],
   "managed":true,
-  "name":"o_cell_door",
+  "name":"o_companion",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,10 +26,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"s_cell_door",
-    "path":"sprites/s_cell_door/s_cell_door.yy",
+    "name":"s_companion",
+    "path":"sprites/s_companion/s_companion.yy",
   },
   "spriteMaskId":null,
   "visible":true,
