@@ -18,3 +18,14 @@ global.dash_speed = 100
 
 //blocking 
 global.block_active = false
+
+
+
+
+
+
+
+
+//prison level 
+
+global.has_key = false

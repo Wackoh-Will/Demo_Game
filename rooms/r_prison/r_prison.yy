@@ -36,6 +36,7 @@
     {"name":"inst_7D9E1C25","path":"rooms/r_prison/r_prison.yy",},
     {"name":"inst_4B52C8","path":"rooms/r_prison/r_prison.yy",},
     {"name":"inst_7BFFE950","path":"rooms/r_prison/r_prison.yy",},
+    {"name":"inst_6212445E","path":"rooms/r_prison/r_prison.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -70,6 +71,7 @@
         {"$GMRInstance":"v1","%Name":"inst_7D9E1C25","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7D9E1C25","objectId":{"name":"o_prison_wall","path":"objects/o_prison_wall/o_prison_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1104.0,"y":0.0,},
         {"$GMRInstance":"v1","%Name":"inst_4B52C8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B52C8","objectId":{"name":"o_cell_door","path":"objects/o_cell_door/o_cell_door.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":240.0,},
         {"$GMRInstance":"v1","%Name":"inst_7BFFE950","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7BFFE950","objectId":{"name":"o_companion","path":"objects/o_companion/o_companion.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1008.0,"y":48.0,},
+        {"$GMRInstance":"v1","%Name":"inst_6212445E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6212445E","objectId":{"name":"o_key","path":"objects/o_key/o_key.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":672.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"s_stone_floor","path":"sprites/s_stone_floor/s_stone_floor.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":true,"x":0,"y":0,},
   ],

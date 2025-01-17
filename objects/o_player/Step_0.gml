@@ -112,3 +112,9 @@ if (global.is_sword_picked_up && mouse_check_button(mb_right)) && !global.block_
 if !mouse_check_button(mb_right){
 		global.block_active = false
 }
+
+
+
+
+
+//key colision 
