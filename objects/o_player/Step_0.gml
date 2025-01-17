@@ -8,23 +8,37 @@ if (keyboard_check(vk_shift)) {
 }
 
 // Handle input for movement
+// Handle input for movement
+// Handle input for movement
 if (keyboard_check(ord("W"))) {
-    y -= global.player_move_speed;  // Move up
-	global.dash_direction = [0, -1];
-}
-if (keyboard_check(ord("S"))) {
-    y += global.player_move_speed;  // Move down
-	global.dash_direction = [0, 1];
-}
-if (keyboard_check(ord("A"))) {
-    x -= global.player_move_speed;  // Move left
-	global.dash_direction = [-1, 0];
-}
-if (keyboard_check(ord("D"))) {
-    x += global.player_move_speed;  // Move right
-	global.dash_direction = [1, 0];
+    y_speed = -global.player_move_speed;  // Move up
+    global.dash_direction = [0, -1];
+} else if (keyboard_check(ord("S"))) {
+    y_speed = global.player_move_speed;   // Move down
+    global.dash_direction = [0, 1];
+} else {
+    y_speed = 0; // No vertical movement if no W or S is pressed
 }
 
+if (keyboard_check(ord("A"))) {
+    x_speed = -global.player_move_speed;  // Move left
+    global.dash_direction = [-1, 0];
+} else if (keyboard_check(ord("D"))) {
+    x_speed = global.player_move_speed;   // Move right
+    global.dash_direction = [1, 0];
+} else {
+    x_speed = 0; // No horizontal movement if no A or D is pressed
+}
+
+// Horizontal movement (left-right)
+if (!place_meeting(x + x_speed, y, solid)) {
+    x += x_speed;  // Move horizontally if no collision with any solid object
+}
+
+// Vertical movement (up-down)
+if (!place_meeting(x, y + y_speed, solid)) {
+    y += y_speed;  // Move vertically if no collision with any solid object
+}
 
 if global.medkit = true{
 	if global.health > global.base_health {
@@ -98,3 +112,9 @@ if (global.is_sword_picked_up && mouse_check_button(mb_right)) && !global.block_
 if !mouse_check_button(mb_right){
 		global.block_active = false
 }
+
+
+
+
+
+//key colision 
