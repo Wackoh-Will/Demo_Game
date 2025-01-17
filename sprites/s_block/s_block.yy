@@ -3,8 +3,8 @@
   "%Name":"s_block",
   "bboxMode":0,
   "bbox_bottom":61,
-  "bbox_left":32,
-  "bbox_right":48,
+  "bbox_left":24,
+  "bbox_right":40,
   "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":48,
 }
