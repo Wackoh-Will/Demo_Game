@@ -8,23 +8,36 @@ if (keyboard_check(vk_shift)) {
 }
 
 // Handle input for movement
+// Handle input for movement
 if (keyboard_check(ord("W"))) {
-    y -= global.player_move_speed;  // Move up
-	global.dash_direction = [0, -1];
-}
-if (keyboard_check(ord("S"))) {
-    y += global.player_move_speed;  // Move down
-	global.dash_direction = [0, 1];
-}
-if (keyboard_check(ord("A"))) {
-    x -= global.player_move_speed;  // Move left
-	global.dash_direction = [-1, 0];
-}
-if (keyboard_check(ord("D"))) {
-    x += global.player_move_speed;  // Move right
-	global.dash_direction = [1, 0];
+    y_speed = -global.player_move_speed;  // Move up
+    global.dash_direction = [0, -1];
+} else if (keyboard_check(ord("S"))) {
+    y_speed = global.player_move_speed;   // Move down
+    global.dash_direction = [0, 1];
+} else {
+    y_speed = 0; // No vertical movement if no W or S is pressed
 }
 
+if (keyboard_check(ord("A"))) {
+    x_speed = -global.player_move_speed;  // Move left
+    global.dash_direction = [-1, 0];
+} else if (keyboard_check(ord("D"))) {
+    x_speed = global.player_move_speed;   // Move right
+    global.dash_direction = [1, 0];
+} else {
+    x_speed = 0; // No horizontal movement if no A or D is pressed
+}
+
+// Horizontal movement (left-right)
+if (!place_meeting(x + x_speed, y, o_prison_wall)) {
+    x += x_speed;  // Move horizontally if no collision
+}
+
+// Vertical movement (up-down)
+if (!place_meeting(x, y + y_speed, o_prison_wall)) {
+    y += y_speed;  // Move vertically if no collision
+}
 
 if global.medkit = true{
 	if global.health > global.base_health {

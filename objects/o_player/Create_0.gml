@@ -6,6 +6,8 @@ global.skill_useable = 0;
 global.medkit = false
 global.is_sword_picked_up = false
 
+x_speed = 0
+y_speed = 0
 
 // Player Create Event
 global.dash_available = true;      // Flag to indicate if dash is available
